@@ -1,0 +1,50 @@
+# env файлы
+.env
+.env.*
+!*.example
+
+# Виртуальное окружение
+.venv/
+env/
+venv/
+
+# Для IDE, в моем случае PyCharm. Если у вас VSCode используйте .vscode/
+.idea/
+
+# Docker данные и логи
+*.log
+docker-data/
+
+# Бинарники, кэш
+build/
+dist/
+*.egg-info/
+.eggs/
+*.so
+
+# Общие python файлы, которые тоже добавляю в игнор (тут и БД и т.п.)
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+*.db
+*.sqlite3
+
+# Для фронта, планируется Node (future front)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Для тестов
+.coverage
+htmlcov/
+
+# Alembic
+alembic/versions/*.pyc
+
+# Для локальных media
+media/
+uploads/
+
+
